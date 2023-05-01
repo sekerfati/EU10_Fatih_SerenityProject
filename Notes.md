@@ -101,7 +101,7 @@ Here is the [link](https://serenity-bdd.github.io/theserenitybook/latest/index.h
   right under project level
   * add following lines to properties file 
 ```properties
-serenity.project.name=B22 API Report
+serenity.project.name=b22 API Report
 serenity.test.root=b22
 ```
 9.In order to generate serenity report, we need to use maven goal
