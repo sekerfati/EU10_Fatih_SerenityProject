@@ -1,2 +1,4 @@
-package B22.spartan.admin;public class SpartanAdminGetTest {
+package B22.spartan.admin;
+
+public class SpartanAdminGetTest {
 }
