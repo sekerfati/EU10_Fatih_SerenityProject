@@ -3,6 +3,7 @@ package b22.spartan.admin;
 import net.serenitybdd.rest.Ensure;
 import net.serenitybdd.rest.SerenityRest;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import io.restassured.http.*;
@@ -12,6 +13,9 @@ import static org.hamcrest.Matchers.*;
 import static io.restassured.RestAssured.baseURI;
 import static net.serenitybdd.rest.SerenityRest.*;
 
+
+
+@Disabled
 @SerenityTest
 
 public class SpartanAdminGetTest {

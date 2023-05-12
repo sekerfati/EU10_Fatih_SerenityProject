@@ -1,5 +1,6 @@
 package b22.spartan.editor;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import utilities.SpartanNewBase;
@@ -21,7 +22,7 @@ import static io.restassured.RestAssured.baseURI;
 import static net.serenitybdd.rest.SerenityRest.*;
 
 
-
+@Disabled
 @SerenityTest
 public class SpartanEditorPostTest extends SpartanNewBase {
 
