@@ -35,15 +35,70 @@ public class SpartanEditorPostTest extends SpartanNewBase {
 
         //send a post request as editor
 
-     given()
+    given()
              .auth().basic("editor", "editor")
              .accept(ContentType.JSON)
              .contentType(ContentType.JSON)
              .body(bodyMap)
              .log().all()
-             .when()
+    .when()
              .post("/spartans")
              .prettyPrint();
+
+
+     /*
+                status code is 201
+                content type is Json
+                success message is A Spartan is Born!
+                id is not null
+                name is correct
+                gender is correct
+                phone is correct
+
+                check location header ends with newly generated id
+         */
+      //  status code is 201
+       Ensure.that("Status code is 201", x-> x.statusCode(201) );
+
+       //        content type is Json
+       Ensure.that("Content Type is Json", x-> x.contentType(ContentType.JSON) );
+
+       //success message is A Spartan is Born!
+
+        Ensure.that("success message is correct",
+                thenPart -> thenPart.body("success",is("A Spartan is Born!"))
+        );
+
+
+
+            //  id is not null
+        Ensure.that("id is not null",
+                thenPart -> thenPart.body("data.id", notNullValue()));
+
+
+        // name is correct
+        Ensure.that("name is correct",
+                thenPart -> thenPart.body("data.name", is(bodyMap.get("name"))));
+
+
+            // gender is correct
+        Ensure.that("gender is correct",
+                thenPart -> thenPart.body("data.gender", is(bodyMap.get("gender"))));
+
+
+            // phone is correct
+        Ensure.that("phone is correct",
+                thenPart -> thenPart.body("data.phone", is(bodyMap.get("phone"))));
+
+
+            //check location header ends with newly generated id
+            // get id and save
+        String id=lastResponse().jsonPath().getString("data.id");
+        Ensure.that("check location header ends with newly generated id",
+                vR -> vR.header("location", endsWith(id)) );
+
+
+
 
     }
 

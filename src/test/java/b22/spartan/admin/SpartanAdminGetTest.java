@@ -35,6 +35,8 @@ public class SpartanAdminGetTest {
 
     }
 
+
+
     @Test
     public void getOneSpartan(){
                 given()
@@ -62,6 +64,8 @@ public class SpartanAdminGetTest {
 
 
     }
+
+
 
     @DisplayName("GET request with Serenity Assertion way")
     @Test
