@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="529bd4e5-a4b9-4d70-99bd-819b8dba7b9f" name="Changes" comment="serenity">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/SpartanData.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/serenity.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/b22/spartan/admin/SpartanAdminGetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/b22/spartan/admin/SpartanAdminGetTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/b22/spartan/editor/SpartanEditorPostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/b22/spartan/editor/SpartanEditorPostTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,28 +43,29 @@
     <option name="autoscrollFromSource" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/fatih/OneDrive/Skrivbord/ideaprojects/EU10_Fatih_SerenityProject/src/test/java&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/fatih/OneDrive/Skrivbord/ideaprojects/EU10_Fatih_SerenityProject/src/test",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\fatih\OneDrive\Skrivbord\ideaprojects\EU10_Fatih_SerenityProject\src\test" />
       <recent name="C:\Users\fatih\OneDrive\Skrivbord\ideaprojects\EU10_Fatih_SerenityProject\src\test\java" />
       <recent name="C:\Users\fatih\OneDrive\Skrivbord\ideaprojects\EU10_Fatih_SerenityProject" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SpartanEditorPostTest.postSpartanAsEditor">
+  <component name="RunManager" selected="JUnit.SpartanEditorPostTest.postSpartanWithCSV">
     <configuration name="SpartanAdminGetTest.getAllSpartan" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EU10_Fatih_SerenityProject" />
       <extension name="coverage">
@@ -112,8 +114,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpartanEditorPostTest.postSpartanWithCSV" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EU10_Fatih_SerenityProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="b22.spartan.editor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="b22.spartan.editor" />
+      <option name="MAIN_CLASS_NAME" value="b22.spartan.editor.SpartanEditorPostTest" />
+      <option name="METHOD_NAME" value="postSpartanWithCSV(java.lang.String,java.lang.String,long)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SpartanEditorPostTest.postSpartanWithCSV" />
         <item itemvalue="JUnit.SpartanEditorPostTest.postSpartanAsEditor" />
         <item itemvalue="JUnit.SpartanAdminGetTest.getOneSpartan" />
         <item itemvalue="JUnit.SpartanAdminGetTest.getAllSpartan" />
@@ -129,7 +148,7 @@
       <option name="presentableId" value="Default" />
       <updated>1682926555581</updated>
       <workItem from="1682926557980" duration="12795000" />
-      <workItem from="1683881416841" duration="7341000" />
+      <workItem from="1683881416841" duration="9619000" />
     </task>
     <task id="LOCAL-00001" summary="serenity">
       <created>1682931711476</created>
@@ -152,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682943553074</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="serenity">
+      <created>1683908505718</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683908505718</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
